@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>  
+    <h1>{{company_name}} Job Portal</h1>
+    <img style="height:60vw "src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGpvYiUyMHBvcnRhbHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+    <h2>About Sarvgya</h2>
+    <p>kjfeihfuie eihfiurehf refure feraf msdnfk  hgfh g thtfhfhfsg dsgdrgdrgdgdgd  dgdrg dg drgdrgdergdrgdrg drg drgdrgdrg drg dr rgrdgdgdfgs fihe fifh eifhesgfdsyf gdfgfg g rdgdfg fdgfdgdrg drg drrgdfgdfgdf gdg dfg dfgdfgdgd gdrdgddg hf jgjh  jgjh j jbjjgg jhgjg uyegh iuf eiufheih fiuehf iuehfiuhri ugfhriugfh rgfuirhgiuregui ehgiuher uighreuhrefreiuhg iuegre</p>
+    <h2>Open Positions</h2>
+<div>
+        {% for job in jobs %}
+        <div style="width:100vw;">
+                    <div style="font-size:1.4rem">
+                        <b>{{job['title']}}</b>
+                        
+                    </div>
+                    <div>
+                        <div>
+                            <i>Location: {{job['location']}} </i>
+                            
+                        </div>
+                        <div style="margin:2px;border-bottom:0.2px solid rgb(176, 174, 174);">
+                            <i>salary: {{job['salary']}} </i>
+                            
+                        </div>
+                        
+                    </div>
+                    <div style="color:white;height:8vw;width:15vw;background-color:blue;border-radius:5px;display:flex;justify-content:center;align-items:center;">
+                        Apply
+                    </div>
+
+                    {% endfor%}
+        </div>
+
+</div>
+    <button>Contact Us</button>
+    
+
+    <style>
+        *{
+            font-family:'sans serif';
+
+        }
+      
+    </style>
+
+</body>
+</html>
